@@ -3,14 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DJ Dialogue Player</title>
+  <title>DJ Roast Player</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body>
   <h1>DJ Roast</h1>
 
+  <!-- Navigation links for scrolling to sections -->
+  <nav>
+    <a href="#joke1">#Joke 1</a>
+    <a href="#joke2">#Joke 2</a>
+    <a href="#joke3">#Joke 3</a>
+    <a href="#joke4">#Joke 4</a>
+    <a href="#about-us">#about us</a>
+  </nav>
+
   <h2>Gounda Mani and Senthil</h2>
-  <div class="grid-container">
+  <div id="joke1" class="grid-container">
     <!-- Repeat this grid item structure for each dialogue (64 items total for 8x8) -->
     <div class="grid-item">
       <img src="image1.png" alt="Dialogue 1" class="dialogue-image">
@@ -86,7 +96,7 @@
   </div>
 
   <h2>Vadivelu's</h2>
-  <div class="grid-container">
+  <div id="joke2" class="grid-container">
     <!-- Another 8x8 grid (64 items total) -->
     <div class="grid-item">
       <img src="image2.png" alt="Dialogue 2" class="dialogue-image">
@@ -99,18 +109,43 @@
   </div>
 
   <h2>Heading #3</h2>
-  <div class="grid-container">
+  <div id="joke3" class="grid-container">
     <!-- Additional 8x8 grids as needed -->
     <div class="grid-item">
-      <img src="image3.png" alt="Dialogue 3" class="dialogue-image">
+      <img src="image2.png" alt="Dialogue 2" class="dialogue-image">
       <p class="dialogue-text">Dialogue 3</p>
-      <button onclick="playAudio('audio3')">Play</button>
-      <button onclick="stopAudio('audio3')">Stop</button>
-      <audio id="audio3" src="audio3.mp3"></audio>
+      <button onclick="playAudio('audio2')">Play</button>
+      <button onclick="stopAudio('audio2')">Stop</button>
+      <audio id="audio3" src="audio2.mp3"></audio>
+    </div>
+    <!-- Repeat .grid-item for all 64 dialogues -->
+  </div>
+
+  <h2>Heading #4</h2>
+  <div id="joke4" class="grid-container">
+    <!-- Additional 8x8 grids as needed -->
+    <div class="grid-item">
+      <img src="image2.png" alt="Dialogue 2" class="dialogue-image">
+      <p class="dialogue-text">Dialogue 3</p>
+      <button onclick="playAudio('audio2')">Play</button>
+      <button onclick="stopAudio('audio2')">Stop</button>
+      <audio id="audio3" src="audio2.mp3"></audio>
     </div>
     <!-- Repeat .grid-item for all 64 dialogues -->
   </div>
 
   <script src="script.js"></script>
+
+  <!-- About Us Section -->
+  <section id="about-us">
+    <h2>About Us</h2>
+    <p>Welcome to the Shan and Kavi DJ Roast Player App! Our app provides an interactive platform for playing and sharing fun DJ dialogues during your events. Enjoy the laughs and share the joy with your friends and family!</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 DJ Dialogue Play App. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>

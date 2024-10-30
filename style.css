@@ -1,186 +1,159 @@
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f9;
-    padding: 20px;
+/* General body styling */
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family: 'Roboto', sans-serif;  /* Example font choice */
+  margin: 0;
+  background-color: #0d47a1;  /* Neon blue color */
+  background-image: url('./dj.jpg');  /* Background image in the same directory */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 55px;
+  font-family: 'Bebas Neue', sans-serif;  /* For bold, eye-catching headings */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Bebas Neue', sans-serif;  /* For bold, eye-catching headings */
+  margin: 30px 0 10px;
+  text-align: left;
+}
+
+
+/* Base grid layout for larger screens */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 140px);  /* Increased column width for larger items */
+  gap: 35px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual grid item styles */
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6e6e6;
+  padding: 25px;  /* Increased padding */
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Image within each grid item */
+.dialogue-image {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 8px;
+}
+
+/* Dialogue text styling */
+.dialogue-text {
+  font-size: 14px;
+  margin: 5px 0;
+  color: black;
+}
+
+/* Button styles */
+button {
+  margin: 3px 0;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);  /* 4 columns for tablets */
   }
-  
-  h1 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 20px;
-    margin: 30px 0 10px;
-    text-align: left;
-  }
-  
-  /* .grid-container {
-    display: grid;
-    grid-template-columns: repeat(8, 120px);
-    gap: 10px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .grid-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e6e6e6;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
+
   .dialogue-image {
     width: 60px;
     height: 60px;
-    margin-bottom: 5px;
-  } */
-  
-  .grid-container {
-    display: grid;
-    /* Increase column width to make each grid item larger */
-    grid-template-columns: repeat(8, 150px);  /* Was 120px */
-    gap: 12px;  /* Increase gap slightly if needed */
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-  
-  .grid-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e6e6e6;
-    padding: 15px;  /* Increase padding for more space within each box */
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  .dialogue-image {
-    width: 70px;  /* Increase image size slightly for a larger display */
-    height: 70px;
-    margin-bottom: 8px;
-  }
-  
-  .dialogue-text {
-    font-size: 14px;
-    margin: 5px 0;
-  }
-  
-  button {
-    margin: 3px 0;
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #ddd;
-  }
-   */
+}
 
-   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f9;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 20px;
-    margin: 30px 0 10px;
-    text-align: left;
-  }
-  
-  /* Base grid layout for larger screens */
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
   .grid-container {
-    display: grid;
-    grid-template-columns: repeat(8, 140px);  /* 8 columns for desktop */
-    gap: 12px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns for mobile */
   }
-  
-  .grid-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e6e6e6;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
+
   .dialogue-image {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 8px;
+    width: 50px;
+    height: 50px;
   }
-  
-  .dialogue-text {
-    font-size: 14px;
-    margin: 5px 0;
+
+  .grid-item {
+    padding: 10px;
   }
-  
-  button {
-    margin: 3px 0;
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+
+  h1, h2 {
+    text-align: center;
+    font-size: 18px;
   }
-  
-  button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Responsive adjustments for tablets */
-  @media (max-width: 1200px) {
-    .grid-container {
-      grid-template-columns: repeat(4, 1fr);  /* 4 columns on tablets */
-    }
-  
-    .dialogue-image {
-      width: 60px;
-      height: 60px;
-    }
-  }
-  
-  /* Responsive adjustments for mobile */
-  @media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: repeat(2, 1fr);  /* 2 columns on mobile */
-    }
-  
-    .dialogue-image {
-      width: 50px;
-      height: 50px;
-    }
-  
-    .grid-item {
-      padding: 10px;
-    }
-  
-    h1, h2 {
-      text-align: center;
-      font-size: 18px;
-    }
-  }
-  
+}
+
+/* Navigation links styling */
+nav {
+  display: flex;
+  justify-content: flex-start;  /* Aligns items to the left */
+  margin: 20px 0;
+  padding-left: 20px;  /* Adjust padding as needed */
+}
+
+nav a {
+  color: #0da181; /* Neon blue color to match theme */
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 15px; /* Spacing between links */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* About Us Section */
+#about-us {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  color: #333;
+}
+
+#about-us h2 {
+  font-size: 22px;
+  color: #0d47a1;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 14px;
+  color: #666;
+  background-color: #e6e6e6;
+  border-top: 1px solid #ccc;
+}
