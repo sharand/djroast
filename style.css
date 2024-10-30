@@ -1,13 +1,8 @@
 /* General body styling */
 body {
-  /* font-family: Arial, sans-serif; */
-  font-family: 'Roboto', sans-serif;  /* Example font choice */
+  font-family: 'Roboto', sans-serif;  /* Font choice */
   margin: 0;
-  background-color: #0d47a1;  /* Neon blue color */
-  background-image: url('./dj.jpg');  /* Background image in the same directory */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #0d47a1, #ff9800);  /* Blue to orange gradient */
   color: #ffffff;
   padding: 20px;
 }
