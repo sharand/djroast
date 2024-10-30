@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f4f4f9;
@@ -85,5 +85,102 @@ body {
   
   button:hover {
     background-color: #ddd;
+  }
+   */
+
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin: 30px 0 10px;
+    text-align: left;
+  }
+  
+  /* Base grid layout for larger screens */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 140px);  /* 8 columns for desktop */
+    gap: 12px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .dialogue-image {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+  }
+  
+  .dialogue-text {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  button {
+    margin: 3px 0;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Responsive adjustments for tablets */
+  @media (max-width: 1200px) {
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr);  /* 4 columns on tablets */
+    }
+  
+    .dialogue-image {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  /* Responsive adjustments for mobile */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);  /* 2 columns on mobile */
+    }
+  
+    .dialogue-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .grid-item {
+      padding: 10px;
+    }
+  
+    h1, h2 {
+      text-align: center;
+      font-size: 18px;
+    }
   }
   
